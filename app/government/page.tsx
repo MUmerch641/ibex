@@ -24,7 +24,7 @@ export const metadata = buildMetadata({
 export default function GovernmentPage() {
   return (
     <>
-      <Section tone="green">
+      <Section tone="green" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Government" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Company — Government"
@@ -33,7 +33,7 @@ export default function GovernmentPage() {
         />
       </Section>
 
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {REGISTRATIONS.map(({ code, name, icon, number }) => {
             const Icon = ICON_MAP[icon] ?? ICON_MAP.default;
@@ -50,7 +50,7 @@ export default function GovernmentPage() {
         </div>
       </Section>
 
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading eyebrow="Corporate Information" title="Corporate Information" className="mb-10" />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           <Card className="flex flex-col gap-2">

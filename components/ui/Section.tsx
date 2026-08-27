@@ -11,6 +11,8 @@ interface SectionProps {
   containerClassName?: string;
   /** Set false when a section owns full-bleed content (e.g. a 3D canvas). */
   useContainer?: boolean;
+  /** Set true on the first section of a page so content clears the fixed navbar. */
+  withNavOffset?: boolean;
 }
 
 /**
@@ -26,6 +28,7 @@ export default function Section({
   tone = "transparent",
   containerClassName,
   useContainer = true,
+  withNavOffset = false,
 }: SectionProps) {
   return (
     <section
@@ -33,6 +36,7 @@ export default function Section({
       data-tone={tone}
       className={cn(
         "relative w-full py-section-mobile lg:py-section-desktop",
+        withNavOffset && "pt-28 lg:pt-36",
         tone !== "transparent" && "bg-noise",
         id && "scroll-mt-24",
         className

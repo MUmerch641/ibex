@@ -12,7 +12,7 @@ export const metadata = buildMetadata({
 
 export default function GalleryPage() {
   return (
-    <Section tone="graphite">
+    <Section tone="graphite" withNavOffset>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Gallery" }]} className="mb-10" />
       <SectionHeading
         eyebrow="Visual Archive"

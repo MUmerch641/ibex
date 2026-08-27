@@ -21,7 +21,7 @@ export default function ManufacturingPage() {
   return (
     <>
       {/* Hero */}
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Manufacturing" }]} className="mb-10" />
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
           <div>
@@ -49,7 +49,7 @@ export default function ManufacturingPage() {
       </Section>
 
       {/* Overview / capability categories */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <SectionHeading
           eyebrow="Overview"
           title="Manufacturing Overview"
@@ -60,7 +60,7 @@ export default function ManufacturingPage() {
       </Section>
 
       {/* Detailed capability areas */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <SectionHeading
           eyebrow="Capabilities"
           title="Manufacturing Capabilities"
@@ -71,7 +71,7 @@ export default function ManufacturingPage() {
       </Section>
 
       {/* Interactive process timeline */}
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading
           eyebrow="Process"
           title="Manufacturing Process"
@@ -82,7 +82,7 @@ export default function ManufacturingPage() {
       </Section>
 
       {/* Gallery placeholder */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <SectionHeading eyebrow="Gallery" title="Facility & Process" className="mb-10" />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           <PlaceholderMedia iconName="factory" label="Fabrication Floor" className="aspect-video" />
@@ -92,7 +92,7 @@ export default function ManufacturingPage() {
       </Section>
 
       {/* CTA */}
-      <Section tone="green">
+      <Section tone="green" withNavOffset>
         <div className="flex flex-col items-start gap-4">
           <h2 className="font-display text-2xl text-white sm:text-3xl">Discuss a manufacturing project</h2>
           <p className="max-w-md text-sm text-steel-grey-light">

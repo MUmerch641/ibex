@@ -24,7 +24,7 @@ export const metadata = buildMetadata({
  */
 export default function SolutionsPage() {
   return (
-    <Section tone="black">
+    <Section tone="black" withNavOffset>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Solutions" }]} className="mb-10" />
       <SectionHeading
         eyebrow="Solutions Ecosystem"

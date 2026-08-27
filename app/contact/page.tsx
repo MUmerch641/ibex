@@ -17,7 +17,7 @@ export const metadata = buildMetadata({
 export default function ContactPage() {
   return (
     <>
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Get In Touch"
@@ -29,7 +29,7 @@ export default function ContactPage() {
         </div>
       </Section>
 
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
           <Card className="lg:col-span-3">
             <ContactForm />

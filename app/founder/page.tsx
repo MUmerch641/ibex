@@ -15,10 +15,10 @@ export const metadata = buildMetadata({
 
 export default function FounderPage() {
   return (
-    <Section tone="graphite">
+    <Section tone="graphite" withNavOffset>
       {/* Hero Section */}
       <div className="max-w-3xl">
-        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Founders & Leadership" }]} className="mb-10" />
+        <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Founders & Leadership" }]} className="mb-12" />
         <span className="eyebrow">FOUNDER & LEADERSHIP</span>
         <h1 className="mt-4 font-display text-4xl leading-tight tracking-tight text-white sm:text-5xl">
           Leadership Behind IBEX

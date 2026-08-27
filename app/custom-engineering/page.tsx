@@ -50,7 +50,7 @@ export default function CustomEngineeringPage() {
   return (
     <>
       {/* Hero */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Custom Engineering" }]} className="mb-10" />
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
           <div>
@@ -77,7 +77,7 @@ export default function CustomEngineeringPage() {
       </Section>
 
       {/* Overview */}
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading
           eyebrow="Overview"
           title="Concept To Commissioning"
@@ -86,13 +86,13 @@ export default function CustomEngineeringPage() {
       </Section>
 
       {/* Engineering Process */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <SectionHeading eyebrow="Capability Areas" title="Engineering Process" className="mb-12" />
         <CategoryGrid categories={CUSTOM_ENGINEERING_AREAS} />
       </Section>
 
       {/* Gallery placeholder */}
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading eyebrow="Gallery" title="Project Gallery" className="mb-10" />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {CUSTOM_ENGINEERING_AREAS.slice(0, 3).map((area) => (
@@ -102,7 +102,7 @@ export default function CustomEngineeringPage() {
       </Section>
 
       {/* Technical Specifications + Industries Served */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Card className="flex flex-col gap-3">
             <h2 className="font-display text-lg text-white">Technical Specifications</h2>
@@ -124,7 +124,7 @@ export default function CustomEngineeringPage() {
       </Section>
 
       {/* FAQ */}
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading eyebrow="FAQ" title="Common Questions" className="mb-10" />
         <div className="max-w-2xl">
           <FaqList items={FAQ} />
@@ -132,7 +132,7 @@ export default function CustomEngineeringPage() {
       </Section>
 
       {/* Related Services */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <SectionHeading eyebrow="Related" title="Related Services" className="mb-10" />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           <RelatedServiceTile href="/manufacturing" title="Manufacturing" />
@@ -142,7 +142,7 @@ export default function CustomEngineeringPage() {
       </Section>
 
       {/* CTA */}
-      <Section tone="green">
+      <Section tone="green" withNavOffset>
         <div className="flex flex-col items-start gap-4">
           <h2 className="font-display text-2xl text-white sm:text-3xl">Start a custom project</h2>
           <Button href="/contact" variant="premium">

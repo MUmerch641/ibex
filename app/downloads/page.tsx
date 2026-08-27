@@ -23,7 +23,7 @@ export const metadata = buildMetadata({
 export default function DownloadsPage() {
   return (
     <>
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Download Center" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Resources"

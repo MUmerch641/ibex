@@ -30,7 +30,7 @@ const ABOUT_QUALITY_STEPS = [
 
 export default function AboutPage() {
   return (
-    <Section tone="graphite">
+    <Section tone="graphite" withNavOffset>
       {/* Hero */}
       <div className="max-w-2xl">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About" }]} className="mb-10" />

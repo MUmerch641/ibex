@@ -16,7 +16,7 @@ export const metadata = buildMetadata({
 export default function CollaborationsPage() {
   return (
     <>
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Collaborations" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Network"
@@ -33,7 +33,7 @@ export default function CollaborationsPage() {
         </div>
       </Section>
 
-      <Section tone="green">
+      <Section tone="green" withNavOffset>
         <div className="flex flex-col items-start gap-4">
           <h2 className="font-display text-2xl text-white sm:text-3xl">Propose a collaboration</h2>
           <p className="max-w-md text-sm text-steel-grey-light">
