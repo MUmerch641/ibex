@@ -2,7 +2,6 @@
 
 import Card from "@/components/ui/Card";
 import { cn } from "@/lib/utils";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const CLIENTS = [
   {
@@ -40,8 +39,6 @@ const ONGOING_PROJECT = {
 };
 
 export function MajorClients() {
-  const ref = useScrollReveal<HTMLDivElement>({ selector: "[data-reveal]" });
-
   return (
     <section className="py-20 lg:py-28 bg-gradient-to-b from-graphite via-[#0F1114] to-graphite">
       {/* Subtle background glow - very restrained teal/green atmospheric tint */}
@@ -59,11 +56,10 @@ export function MajorClients() {
         </div>
 
         {/* Major Clients Grid */}
-        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
           {CLIENTS.map((client, index) => (
             <Card
               key={client.name}
-              data-reveal
               className={cn(
                 "relative flex flex-col items-start gap-4 p-6 transition-all duration-500 ease-out hover:-translate-y-2",
                 "bg-gradient-to-br from-[#1A1C20]/80 to-[#14161A]/80",

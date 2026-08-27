@@ -20,7 +20,6 @@
     background-image:
       radial-gradient(120% 80% at 50% -10%, rgba(74, 78, 84, 0.25) 0%, transparent 60%),
       linear-gradient(180deg, var(--color-matte-black) 0%, var(--color-graphite) 100%);
-    background-attachment: fixed;
   }
 
   body::before {

@@ -5,7 +5,6 @@ import Image from "next/image";
 import { X, ImageOff, Search, ZoomIn } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { GALLERY_FILTERS, GALLERY_ITEMS, type GalleryCategory, type GalleryItem } from "@/lib/data/gallery";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const aspectClass: Record<Exclude<GalleryItem["aspect"], undefined>, string> = {
   square: "aspect-square",
@@ -159,7 +158,6 @@ export default function GalleryExplorer() {
   const [filter, setFilter] = useState<GalleryCategory | "all">("all");
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<GalleryItem | null>(null);
-  const gridRef = useScrollReveal<HTMLDivElement>({ selector: "[data-reveal]" });
 
   const filtered = useMemo(() => {
     const byCategory = filter === "all" ? GALLERY_ITEMS : GALLERY_ITEMS.filter((item) => item.category === filter);
@@ -203,7 +201,7 @@ export default function GalleryExplorer() {
       {filtered.length === 0 ? (
         <p className="py-16 text-center text-sm text-steel-grey-light">No results for that search.</p>
       ) : (
-        <div ref={gridRef} className="columns-1 gap-6 sm:columns-2 lg:columns-3">
+        <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
           {filtered.map((item) => (
             <GalleryTile key={item.id} item={item} onOpen={() => setActive(item)} />
           ))}
