@@ -75,7 +75,6 @@ export default function FounderPage() {
       />
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {/* Director Card */}
         <Card className="flex flex-col items-center text-center gap-4 p-6 transition-all hover:shadow-lg hover:shadow-gold-500/5">
           <div className="relative h-48 w-48 overflow-hidden rounded-full ring-2 ring-white/10 transition-all hover:ring-gold-500/30">
             <img
@@ -104,6 +103,22 @@ export default function FounderPage() {
           <div>
             <h3 className="font-display text-xl text-white">Mudassar Zunair Mohsan</h3>
             <p className="mt-1 text-sm font-medium text-gold-500">Business Development Manager</p>
+          </div>
+        </Card>
+
+        {/* Chief Operation Officer Card */}
+        <Card className="flex flex-col items-center text-center gap-4 p-6 transition-all hover:shadow-lg hover:shadow-gold-500/5">
+          <div className="relative h-48 w-48 overflow-hidden rounded-full ring-2 ring-white/10 transition-all hover:ring-gold-500/30">
+            <img
+              src="/team/coo/coo.png"
+              alt="Sheraz Iqbal Kamboh"
+              className="h-full w-full object-cover object-center"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <h3 className="font-display text-xl text-white">Sheraz Iqbal Kamboh</h3>
+            <p className="mt-1 text-sm font-medium text-gold-500">Chief Operation Officer</p>
           </div>
         </Card>
       </div>
