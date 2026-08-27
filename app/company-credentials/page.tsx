@@ -17,7 +17,7 @@ export const metadata = buildMetadata({
 export default function CompanyCredentialsPage() {
   return (
     <>
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Company Credentials" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Company"

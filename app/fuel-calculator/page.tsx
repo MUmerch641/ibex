@@ -12,7 +12,7 @@ export const metadata = buildMetadata({
 
 export default function FuelCalculatorPage() {
   return (
-    <Section tone="graphite">
+    <Section tone="graphite" withNavOffset>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Fuel Calculator" }]} className="mb-10" />
       <SectionHeading
         eyebrow="Operator Tool"

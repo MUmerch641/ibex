@@ -27,7 +27,7 @@ export const metadata = buildMetadata({
 export default function CsrPage() {
   return (
     <>
-      <Section tone="green">
+      <Section tone="green" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "CSR" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Company — CSR"
@@ -37,7 +37,7 @@ export default function CsrPage() {
       </Section>
 
       {/* The two confirmed facts, front and center */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <Card className="flex flex-col gap-3">
             <HeartHandshake size={26} className="text-gold-500" aria-hidden="true" />
@@ -59,7 +59,7 @@ export default function CsrPage() {
       </Section>
 
       {/* Program areas — structural only */}
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading
           eyebrow="Program Areas"
           title="Where The Commitment Is Directed"
@@ -70,7 +70,7 @@ export default function CsrPage() {
       </Section>
 
       {/* Timeline / Impact / Philosophy / Transparency — honest placeholders */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <div className="mb-8 flex items-start gap-3 rounded-lg border border-gold-500/30 bg-gold-500/5 p-5">
           <ShieldQuestion size={22} className="mt-0.5 shrink-0 text-gold-500" aria-hidden="true" />
           <p className="text-sm leading-relaxed text-steel-grey-light">

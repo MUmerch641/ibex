@@ -125,7 +125,7 @@ export default function InvestorsPartnersPage() {
   return (
     <>
       {/* Hero */}
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Investors & Partners" }]} className="mb-10" />
         <div className="max-w-3xl">
           <span className="eyebrow">Strategic Investment Opportunity</span>

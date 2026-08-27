@@ -25,7 +25,7 @@ export const metadata = buildMetadata({
 export default function QualityPage() {
   return (
     <>
-      <Section tone="green">
+      <Section tone="green" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Quality Standards" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Company — Quality"
@@ -34,7 +34,7 @@ export default function QualityPage() {
         />
       </Section>
 
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <div className="mb-8 flex items-start gap-3 rounded-lg border border-gold-500/30 bg-gold-500/5 p-5">
           <ShieldQuestion size={22} className="mt-0.5 shrink-0 text-gold-500" aria-hidden="true" />
           <p className="text-sm leading-relaxed text-steel-grey-light">
@@ -59,7 +59,7 @@ export default function QualityPage() {
         </div>
       </Section>
 
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading
           eyebrow="Process"
           title="Quality Assurance Process"

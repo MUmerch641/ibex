@@ -16,7 +16,7 @@ export const metadata = buildMetadata({
 export default function SmartFleetPage() {
   return (
     <>
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Smart Fleet Technology" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Smart Technology"
@@ -26,7 +26,7 @@ export default function SmartFleetPage() {
         />
         <CategoryGrid categories={SMART_FLEET_AREAS} />
       </Section>
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <div className="flex flex-col items-start gap-4">
           <h2 className="font-display text-2xl text-white sm:text-3xl">Ask about fleet technology</h2>
           <Button href="/contact" variant="premium">

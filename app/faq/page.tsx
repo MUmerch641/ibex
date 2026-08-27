@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 export default function FaqPage() {
   return (
     <>
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} className="mb-10" />
         <SectionHeading eyebrow="Support" title="Frequently Asked Questions" className="mb-12" />
         <div className="flex flex-col gap-12">

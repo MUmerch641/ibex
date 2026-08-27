@@ -20,7 +20,7 @@ export const metadata = buildMetadata({
 export default function GlobalVisionPage() {
   return (
     <>
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Global Vision" }]} className="mb-10" />
         <SectionHeading
           eyebrow="Vision"
@@ -29,12 +29,12 @@ export default function GlobalVisionPage() {
         />
       </Section>
 
-      <Section tone="graphite">
+      <Section tone="graphite" withNavOffset>
         <SectionHeading eyebrow="Future Export Markets" title="Where We're Looking" className="mb-12" />
         <CategoryGrid categories={EXPORT_MARKETS} />
       </Section>
 
-      <Section tone="black">
+      <Section tone="black" withNavOffset>
         <SectionHeading eyebrow="Technology Roadmap" title="Future Technologies" className="mb-12" />
         <CategoryGrid categories={FUTURE_TECHNOLOGY} />
       </Section>
