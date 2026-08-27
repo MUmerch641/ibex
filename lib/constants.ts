@@ -22,6 +22,10 @@ export const LEADERSHIP = {
     name: "Mudassar Zunair Mohsan",
     title: "Business Development Manager",
   },
+  coo: {
+    name: "Sheraz Iqbal Kamboh",
+    title: "Chief Operation Officer",
+  },
 } as const;
 
 export const COMPANY = {

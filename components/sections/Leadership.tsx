@@ -59,7 +59,7 @@ export function Leadership() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <LeadershipCard
             name={LEADERSHIP.ceo.name}
             title={LEADERSHIP.ceo.title}
@@ -74,6 +74,11 @@ export function Leadership() {
             name={LEADERSHIP.businessDevelopmentManager.name}
             title={LEADERSHIP.businessDevelopmentManager.title}
             imageUrl="/team/business-development-manager/business%20development%20manager.jpg"
+          />
+          <LeadershipCard
+            name={LEADERSHIP.coo.name}
+            title={LEADERSHIP.coo.title}
+            imageUrl="/team/coo/coo.png"
           />
         </div>
       </div>
