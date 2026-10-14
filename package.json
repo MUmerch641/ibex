@@ -2,11 +2,11 @@
   "name": "ibex-vehicle-restoration",
   "version": "0.1.0-phase1",
   "private": true,
-  "description": "IBEX VEHICLE RESTORATION (PRIVATE) LIMITED — enterprise website foundation",
+  "description": "IBEX VEHICLE RESTORATION (PRIVATE) LIMITED \u2014 enterprise website foundation",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
